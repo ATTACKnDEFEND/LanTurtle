@@ -1,7 +1,7 @@
 #!/bin/bash /usr/lib/turtle/turtle_module
 VERSION="1.0"
 DESCRIPTION="Meterpreter mipsbe reverse tcp"
-AUTHOR="Ag3nt047"
+AUTHOR="Ag3nt047. *LEGAL DISCLAMER* The author does not hold any responsibility for the bad use of this module, remember that attacking targets without prior consent is illegal and punished by law. So use this module responsibly."
 CONF=/tmp/meterpreter-reverse-tcp.form
 
 : ${DIALOG_OK=0}
