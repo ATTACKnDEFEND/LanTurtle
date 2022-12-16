@@ -6,5 +6,7 @@
 
 #### DOWNLOAD/INSTALL
 
+**1º - Download module from github**<br />
+`git clone https://github.com/r00t-3xp10it/venom.git`
 
 
