@@ -1,4 +1,4 @@
-## Unofficial custom Hak5 LAN Turtle Module - meterpreter-mipsbe-reverse-tcp
+## Unofficial custom Hak5 LAN Turtle module - meterpreter-mipsbe-reverse-tcp
 
 #### LEGAL DISCLAMER
     The author does not hold any responsibility for the use of this module. Remember that attacking
