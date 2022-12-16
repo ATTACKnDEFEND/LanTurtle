@@ -7,7 +7,8 @@
 #### DOWNLOAD/INSTALL
 
 **1 - On LAN Turtle: download module from github**<br />
-`git clone https://github.com/ATTACKnDEFEND/LanTurtlemeterpreter-mipsbe-reverse-tcp`
+`wget https://raw.githubusercontent.com/ATTACKnDEFEND/LanTurtle/main/meterpreter-mipsbe-reverse-tcp -O
+meterpreter-mipsbe-reverse-tcp`
 
 **2 - On LAN Turtle: copy meterpreter-mipsbe-reverse-tcp to Hak5 Turtle modules directory**<br />
 `copy meterpreter-mipsbe-reverse-tcp /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
