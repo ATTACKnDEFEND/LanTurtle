@@ -6,7 +6,7 @@
 
 #### DOWNLOAD/INSTALL
 
-**1 - On LAN Turtle: download module from github**<br />
+**1 - On LAN Turtle: download module from GitHub**<br />
 <br />
 `wget https://raw.githubusercontent.com/ATTACKnDEFEND/LanTurtle/main/meterpreter-mipsbe-reverse-tcp -O
 /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
