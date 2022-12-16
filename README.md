@@ -7,6 +7,6 @@
 #### DOWNLOAD/INSTALL
 
 **1 - Download module from github**<br />
-`git clone https://github.com/r00t-3xp10it/venom.git`
+`git clone https://github.com/ATTACKnDEFEND/LanTurtlemeterpreter-mipsbe-reverse-tcp`
 
 
