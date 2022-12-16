@@ -1,15 +1,14 @@
 ## Unofficial custom Hak5 LAN Turtle Module - meterpreter-mipsbe-reverse-tcp
 
 #### LEGAL DISCLAMER
-    The author does not hold any responsibility for the bad use of this module, remember that attacking
+    The author does not hold any responsibility for the use of this module. Remember that attacking
     targets without prior consent is illegal and punished by law. So use this module responsibly.
 
 #### DOWNLOAD/INSTALL
 
 **1 - On LAN Turtle: download module from github**<br />
 `wget https://raw.githubusercontent.com/ATTACKnDEFEND/LanTurtle/main/meterpreter-mipsbe-reverse-tcp -O
-meterpreter-mipsbe-reverse-tcp`<br />
-`mv meterpreter-mipsbe-reverse-tcp /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
+/etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
 `chmod 755 /etc/turtle/modules/meterpreter-mipsbe-reverse-tcp`<br />
 
 **3 - On Kali: generate Meterpreter payload with Msfvenom**<br />
